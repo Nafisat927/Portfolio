@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --color-bg-start: #ffe6f2;
+  --color-bg-end: #e6f2ff;
+  --color-primary: #ff69b4; /* Hot Pink */
+  --color-primary-soft: #ffb7d5;
+  --color-secondary: #a2d2ff; /* Baby Blue */
+  --color-accent: #cdb4db; /* Lavender */
+  --color-text: #590d22; /* Dark Pink/Red for text */
+  --color-white: #ffffff;
+  --color-glass: rgba(255, 255, 255, 0.6);
+  --color-glass-border: rgba(255, 255, 255, 0.8);
+
+  /* Gradients */
+  --gradient-holo: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  --gradient-magic: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb);
+
+  /* Shadows */
+  --shadow-soft: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  --shadow-pop: 4px 4px 0px var(--color-primary);
+
+  /* Typography */
+  --font-display: 'Chewy', cursive;
+  --font-body: 'Quicksand', sans-serif;
+  --font-hand: 'Patrick Hand', cursive;
+}
