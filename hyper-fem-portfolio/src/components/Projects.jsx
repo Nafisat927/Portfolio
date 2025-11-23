@@ -3,23 +3,29 @@ import { motion } from 'framer-motion';
 
 const projects = [
     {
-        title: 'Pink OS',
-        description: 'A web-based operating system with a cute interface.',
-        tags: ['React', 'TypeScript', 'Styled Components'],
-        color: '#ffb7d5'
+        title: 'StreetCred',
+        description: 'A geo-tagged civic reporting platform.',
+        tags: ['React', 'Tailwind', 'Figma', 'Django', 'Supabase'],
+        color: '#ffb7d5',
+        award: 'DivHacks 2025 Sustainability Winner',
+        link: 'https://streetcred-eta.vercel.app/'
     },
     {
-        title: 'Glitter API',
-        description: 'An API that adds sparkles to your JSON responses.',
-        tags: ['Node.js', 'Express', 'Sparkles'],
-        color: '#a2d2ff'
+        title: 'Fridge Friends -> Infriendtory',
+        description: 'A CUNY-wide marketplace for buying/trading/selling goods.',
+        tags: ['React', 'Tailwind', 'Figma', 'Supabase'],
+        color: '#a2d2ff',
+        award: 'HunterHacks 2025 Sustainability Winner',
+        link: 'https://fridge-friends-git-main-krisccodes-projects.vercel.app/'
     },
-    {
-        title: 'Kawaii Shop',
-        description: 'E-commerce store for plushies and stickers.',
-        tags: ['Next.js', 'Stripe', 'Tailwind'],
-        color: '#cdb4db'
-    }
+    // {
+    //     title: 'Kawaii Shop',
+    //     description: 'E-commerce store for plushies and stickers.',
+    //     tags: ['Next.js', 'Stripe', 'Tailwind'],
+    //     color: '#cdb4db',
+    //     award: 'Best Design Award Winner',
+    //     link: '#'
+    // }
 ];
 
 const Projects = () => {
@@ -32,7 +38,7 @@ const Projects = () => {
                 color: 'var(--color-primary)',
                 textShadow: '3px 3px 0px #fff'
             }}>
-                Selected Works 📂
+                Projects
             </h2>
 
             <div style={{
@@ -65,7 +71,24 @@ const Projects = () => {
                             background: project.color
                         }}></div>
 
-                        <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>{project.title}</h3>
+                        <h3 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                {project.title} 🔗
+                            </a>
+                        </h3>
+
+                        {project.award && (
+                            <p style={{
+                                fontFamily: 'var(--font-display)',
+                                color: 'var(--color-primary)',
+                                fontSize: '1rem',
+                                marginBottom: '1rem',
+                                fontWeight: 'bold'
+                            }}>
+                                🏆 {project.award}
+                            </p>
+                        )}
+
                         <p style={{ fontFamily: 'var(--font-body)', marginBottom: '1.5rem', lineHeight: '1.6' }}>
                             {project.description}
                         </p>
