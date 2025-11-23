@@ -45,7 +45,7 @@ const Hero = () => {
                         color: 'var(--color-primary)',
                         textShadow: '4px 4px 0px #fff, 8px 8px 0px var(--color-accent)'
                     }}>
-                        Hi, I'm <span style={{ color: 'var(--color-text)' }}>Nafisa!</span>
+                        Hi, I'm Nafisa!
                     </h1>
                     <h2 style={{
                         fontSize: '2rem',
@@ -61,7 +61,7 @@ const Hero = () => {
                         margin: '0 auto 2rem',
                         fontFamily: 'var(--font-hand)'
                     }}>
-                        Welcome to my digital garden! 🌱 I build magical web experiences with a touch of sparkle.
+                        Welcome to my portfolio!
                     </p>
 
                     <motion.button

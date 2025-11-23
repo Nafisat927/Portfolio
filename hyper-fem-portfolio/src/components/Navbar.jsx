@@ -33,7 +33,7 @@ const Navbar = () => {
                 color: 'var(--color-primary)',
                 textShadow: '2px 2px 0px #fff'
             }}>
-                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>✨ SparkleDev</Link>
+                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>✨ NafDev </Link>
             </div>
             <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
                 {navItems.map((item) => (
