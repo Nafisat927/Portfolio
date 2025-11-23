@@ -6,7 +6,7 @@ const Navbar = () => {
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'Work', path: '/work' },
-        { name: 'Diary', path: '/diary' },
+        { name: 'Recipes', path: '/recipes' },
         // { name: 'Contact', path: '/contact' } // Uncomment when ready
     ];
 

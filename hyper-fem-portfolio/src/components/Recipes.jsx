@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Diary = () => {
+const Recipes = () => {
     return (
-        <section id="diary" style={{ padding: '4rem 0', position: 'relative' }}>
+        <section id="recipes" style={{ padding: '4rem 0', position: 'relative' }}>
             <div style={{
                 background: '#fff',
                 maxWidth: '800px',
@@ -23,20 +23,18 @@ const Diary = () => {
                     marginBottom: '2rem',
                     color: 'var(--color-text)'
                 }}>
-                    Dear Diary... ✍️
+                    My Recipes 🍳
                 </h2>
 
                 <p style={{ fontFamily: 'var(--font-hand)', fontSize: '1.5rem', marginBottom: '2rem' }}>
-                    Today I learned how to make things float with CSS! It's so magical. I also drank three cups of coffee and petted a cat.
-                    Coding feels like casting spells sometimes, don't you think?
+                    Welcome to my kitchen! Here are some of my favorite things to cook.
                 </p>
 
-                <p style={{ fontFamily: 'var(--font-hand)', fontSize: '1.5rem' }}>
-                    Currently obsessed with: <br />
-                    🌸 Framer Motion <br />
-                    ✨ CSS Grid <br />
-                    🍵 Matcha Lattes
-                </p>
+                <ul style={{ fontFamily: 'var(--font-hand)', fontSize: '1.5rem', listStyle: 'none', padding: 0 }}>
+                    <li style={{ marginBottom: '1rem' }}>🥞 Fluffy Pancakes</li>
+                    <li style={{ marginBottom: '1rem' }}>🥑 Avocado Toast</li>
+                    <li style={{ marginBottom: '1rem' }}>🍝 Spicy Pasta</li>
+                </ul>
 
                 {/* Tape effect */}
                 <div style={{
@@ -55,4 +53,4 @@ const Diary = () => {
     );
 };
 
-export default Diary;
+export default Recipes;

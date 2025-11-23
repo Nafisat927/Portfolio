@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
-import Diary from './components/Diary';
+import Recipes from './components/Recipes';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/work" element={<Projects />} />
-          <Route path="/diary" element={<Diary />} />
+          <Route path="/recipes" element={<Recipes />} />
           {/* Placeholder for Contact if needed, or redirect to Home */}
           <Route path="*" element={<Hero />} />
         </Routes>
